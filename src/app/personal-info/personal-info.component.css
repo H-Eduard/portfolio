@@ -1,0 +1,42 @@
+
+  .container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .container div {
+    display: flex;
+    flex-direction: column;
+    gap: 75px; 
+  }
+
+  .container h1 {
+    margin: 0;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .container h1:hover{
+    color:yellow;
+  }
+
+  .container p {
+    margin: 0;
+    font-size: 70px;
+  }
+  .container img {
+    width: 100%;  /* Make the image responsive to the container's width */
+    max-width: 600px;  /* Set a maximum width for the image */
+    height: auto;  /* Maintain the aspect ratio */
+    filter: grayscale(100%);  /* Convert the image to grayscale */
+    padding: 0;
+    padding-left: 50px;
+    padding-top: 200px;
+    align-items: center;
+  }
+  
+  .container img:hover {
+    transform: scale(1.1);  /* Slightly enlarge the image on hover */
+    filter: brightness(1.2);  /* Make the image brighter on hover */
+  }

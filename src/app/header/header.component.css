@@ -1,0 +1,26 @@
+
+.mat-toolbar{
+  background-color: black;
+  position: sticky;
+}
+
+.mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFA700;
+  }
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  .buttons-container {
+    display: flex;
+  }
+  
+  .custom-button {
+    color: #FFA700 !important;
+  }
+  .custom-button:hover {
+    color: yellow !important;
+  }
