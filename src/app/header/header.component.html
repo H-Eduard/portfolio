@@ -1,11 +1,21 @@
 <mat-toolbar>
     <mat-toolbar-row>
-      <span (click)="personalInfo()">Personal Portfolio</span>
+      <span (click)="personalInfo()">Eduard Portfolio</span>
       <span class="buttons-container">
-        <button mat-button class="custom-button" (click)="personalInfo()"> Personal Info </button>
+        <button mat-button class="custom-button" (click)="personalInfo()"> About </button>
         <button mat-button class="custom-button" (click)="technology()"> Technology</button>
+        <button mat-button class="custom-button"                   > Experience</button>
+        <button mat-button class="custom-button" (click)="links()"> Project </button>
         <button mat-button class="custom-button" (click)="contacts()"> Contacts</button>
-        <button mat-button class="custom-button" (click)="links()"> Links</button>
       </span>
+      <mat-icon class="menu-icon" [matMenuTriggerFor]="menu">menu</mat-icon>
     </mat-toolbar-row>
   </mat-toolbar>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="personalInfo()">About</button>
+    <button mat-menu-item (click)="technology()">Technology</button>
+    <button mat-menu-item>Experience</button>
+    <button mat-menu-item (click)="links()">Project</button>
+    <button mat-menu-item (click)="contacts()">Contacts</button>
+  </mat-menu>

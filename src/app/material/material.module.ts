@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -16,7 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule, 
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ],
   exports: [ // Make sure to export the modules so they can be used in other modules or components
     CommonModule,
@@ -24,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule, 
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ]
 })
 export class MaterialModule { }

@@ -24,3 +24,27 @@
   .custom-button:hover {
     color: yellow !important;
   }
+
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .buttons-container {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
